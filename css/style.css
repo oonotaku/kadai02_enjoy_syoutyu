@@ -1,0 +1,116 @@
+body{
+    background-color: bisque;
+}
+
+/* プレビュー画像のスタイル */
+#previewImage {
+    display: none;
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+/* カスタムボタンのスタイル */
+.custom-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.box_end1 {
+    grid-column: 1;
+    grid-row: 1;
+
+}
+
+.box_end2 {
+    grid-column: 2;
+    grid-row: 2;
+
+}
+
+
+/* wrapper4全体の配置 */
+.wrapper4 {
+    display: flex;
+    justify-content: center;
+    /* 中央寄せ */
+    gap: 20px;
+    /* アイコン間のスペース */
+    margin-top: 20px;
+    padding: 20px 0;
+}
+/* アイコンのサイズ調整 */
+.social-icon {
+    width: 40px;
+    /* アイコンの幅を設定 */
+    height: 40px;
+    /* アイコンの高さを設定 */
+    transition: transform 0.3s;
+    /* ホバー時のアニメーション */
+}
+
+.textbox-2-label,
+.textbox-2 {
+    color: #333;
+}
+
+.textbox-2-label {
+    display: block;
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+
+.textbox-3 {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    border-radius: 3px;
+    background: #f7f7f7;
+    font-size: 50px;
+    line-height: 1.5;
+}
+
+.textbox-3::placeholder {
+    color: #7c7b7b;
+}
+
+.last{
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+#info{
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* プレビュー画像のスタイル */
+#previewImage {
+    display: none;
+    /* 初期状態は非表示 */
+    width: 33.33vw;
+    /* 画面の幅の1/3（33.33%） */
+    max-width: 100%;
+    /* 画面の幅を超えないように制限 */
+    height: auto;
+    /* アスペクト比を維持 */
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /* 影をつけてスタイリッシュに */
+}
+
+/* 折りたたみボタンのスタイル */
+#toggleButton {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}

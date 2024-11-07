@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2 class="title">美味しい焼酎は酔う前に記録しよう！</h2>
+    <p>来店したのは <span id="current-date"></span> です。</p>
+    <script src="script.js"></script>
+
+<!-- プレビュー画像の表示場所 -->
+<img id="previewImage" alt="プレビュー画像">
+
+
+
+<!-- カスタムボタン -->
+<div>
+    <label>
+        
+        <span class="textbox-2-label">この焼酎の名前は？</span>
+        <input type="text" class="shochuInput" placeholder="焼酎名を入力してください" />
+    </label>
+    <!-- <input type="text" id="shochuInput" placeholder="焼酎名を入力してください" style="margin-top: 10px;"> -->
+    
+</div>
+<label for="cameraInput" class="custom-button">焼酎名を入力したら撮影してください！</label>
+<input type="file" id="cameraInput" accept="image/*" capture="camera" style="display: none;">
+
+
+<!-- 結果表示用のコンテナ -->
+<div id="shochuInfoContainer" style="margin-top: 10px;">
+    <!-- 折りたたみボタン -->
+    <button id="toggleButton" class="custom-button" style="margin-bottom: 10px;">この焼酎に関して</button>
+
+    <!-- 焼酎情報の表示エリア -->
+    <div id="shochuInfo" style="display: none;">
+        <!-- ここに焼酎の情報が表示されます -->
+    </div>
+</div>
+
+
+<footer>
+    <div class="last">鶏と本格焼酎　昭和</div>
+    <p id="info">宮崎の地鶏炭火焼きと鳥刺し、本格焼酎のお店です。</p>
+    <p id="info">カウンター12席</p>
+    <p id="info">営業時間17時〜0時</p>
+    <p id="info">定休日　日曜日...</p>
+    <p id="info">Shinjuku2-1-6, Shinjuku 160-0022</p>
+    <div class="wrapper4">
+        <div class="box_end1">
+            <a href="https://www.instagram.com/imoshochu_showa/" target="_blank">
+                <img src="./img/insta.jpeg" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+        <div class="box_end2">
+            <a href="https://www.facebook.com/profile.php?id=100089971883969" target="_blank">
+                <img src="./img/FBicon.png" alt="Facebook" class="social-icon">
+            </a>
+        </div>
+    </div>
+    
+
+</footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+</html>
