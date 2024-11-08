@@ -1,4 +1,4 @@
-// ファイル選択のイベントリスナーを追加
+// ファイル選択のイベント追加
 document.getElementById('cameraInput').addEventListener('change', async function (event) {
     // 選択されたファイルを取得
     const file = event.target.files[0];
@@ -10,7 +10,7 @@ document.getElementById('cameraInput').addEventListener('change', async function
             previewImage.src = e.target.result;  // 画像のプレビューを表示
             previewImage.style.display = 'block';  // プレビュー画像を表示する
 
-            // 画像認識APIに送信して焼酎の銘柄名を取得（ここではテスト用に固定の名前を返す）
+            // 画像認識APIに送信して焼酎の銘柄名を取得（したかった。。。）
             const shochuName = await identifyShochu(e.target.result);
 
             if (shochuName) {  // 焼酎名が取得できた場合
@@ -19,6 +19,7 @@ document.getElementById('cameraInput').addEventListener('change', async function
 
                 // 取得した情報を表示
                 displayShochuInfo(shochuInfo);
+                
             } else {  // 銘柄名が特定できなかった場合の処理
                 alert("焼酎の名前が特定できませんでした");
             }
@@ -47,7 +48,7 @@ async function fetchShochuInfo(shochuName) {
     - 似たような焼酎でおすすめは？`;
 
     try {
-        // OpenAIのAPIキー（実際には環境変数などで安全に管理してください）
+        // OpenAIのAPIキー（実際には環境変数などで安全に管理してください）←このやり方がわからなかった。。。
         const apiKey = "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";
         // OpenAI APIへのリクエストを送信（/v1/chat/completionsエンドポイントを使用）
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
