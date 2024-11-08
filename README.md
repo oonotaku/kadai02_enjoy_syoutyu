@@ -12,7 +12,7 @@
 - 構想　
 
 ## ③DEMO
-- https://oonotaku.github.io/kadai01_janken/
+- https://oonotaku.github.io/kadai02_enjoy_syoutyu/
 
 ## ④作ったアプリケーション用のIDまたはPasswordがある場合
 - ID: 今回なし
