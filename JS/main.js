@@ -49,7 +49,7 @@ async function fetchShochuInfo(shochuName) {
 
     try {
         // OpenAIのAPIキー（実際には環境変数などで安全に管理してください）←このやり方がわからなかった。。。
-        const apiKey = "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";
+        const apiKey = "";
         // OpenAI APIへのリクエストを送信（/v1/chat/completionsエンドポイントを使用）
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",  // POSTメソッドでリクエストを送信
